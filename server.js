@@ -1,6 +1,8 @@
+const { v4: uuidv4 } = require('uuid');
 const express = require('express');
 const path = require('path');
 const noteData = require('./db/db.json');
+const fs = require ('fs');
 
 const PORT = process.env.PORT || 3001;
 
@@ -21,6 +23,17 @@ app.get('/notes', (req, res) => {
   });
 
 app.get('/api/notes', (req, res) => res.json(noteData));
+
+app.post('/api/notes', (req, res)=>{
+    req.body.id = uuidv4();
+    console.log(req.body);
+    noteData.push(req.body);
+    fs.writeFile('./db/db.json',JSON.stringify(noteData),function(err){
+        if (err) throw err;
+        res.json(noteData);
+    })
+    
+})
 
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);
