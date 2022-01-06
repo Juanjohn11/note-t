@@ -2,7 +2,7 @@
 
 ## Description
 
-The note taker app should halp you keep track of all of your neccessitys when it comes to tracking your daily tasks or just homework.
+The note taker app should help you keep track of all of your neccessitys when it comes to tracking your daily tasks or just homework.
 
 ## Images
 
@@ -11,7 +11,7 @@ The note taker app should halp you keep track of all of your neccessitys when it
 
 ## Usage
 
-As you can see with the images above, click the "get start" button to enter the application. At the moment we can only add notes and not delete them, however that should be coming up in the next update.
+As you can see with the images above, click the "get started" button to enter the application. At the moment we can only add notes and not delete them, however that should be coming up in the next update. In the "Note title" placeholder click to add a title that corresponds with your notes that will go into the "Note Text" area.
 
 ## Link
 
